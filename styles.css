@@ -1,0 +1,126 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header styles */
+.main-header {
+    background-color: #4b79a1; /* Sets the background color of the header */
+    color: #fff; /* Text color in the header */
+    padding: 15px 20px; /* Padding inside the header */
+    position: relative; /* Allows further positioning within header */
+    text-align: left; /* Aligns text to the left */
+}
+
+.brand-title {
+    font-family: 'Poppins', sans-serif; /* Uses the Poppins font for the brand title */
+    font-size: 32px; /* Font size for the brand title */
+    font-weight: 700; /* Makes the font bold */
+}
+
+.subscript {
+    font-size: 14px; /* Smaller font size for the tagline */
+    font-weight: 400; /* Regular weight for the tagline */
+    margin-top: -5px; /* Adjusts the vertical spacing */
+    margin-left: 1px; /* Slight left adjustment to align with the title */
+}
+
+/* Styles for the hero section */
+.hero-section {
+    background-color: #e2e8f0; /* Light background color for the hero section */
+    padding: 50px 20px; /* Padding around the hero content */
+    text-align: center; /* Center the hero content */
+}
+
+.hero-content h2 {
+    font-size: 36px; /* Large font size for the hero heading */
+    color: #2b2d42; /* Darker color for the hero heading */
+    margin-bottom: 20px; /* Space below the hero heading */
+    font-weight: 700; /* Bold font for the hero heading */
+}
+
+.hero-content p {
+    font-size: 18px; /* Medium font size for the hero paragraph */
+    color: #5a5f71; /* Slightly muted color for the hero paragraph */
+}
+
+/* Styles for the filters section */
+.filters-section {
+    padding: 30px 20px; /* Padding around the filters section */
+    background-color: #fff; /* White background for the filters section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Space above and below the filters section */
+}
+
+.filters-container {
+    display: flex; /* Flexbox layout for filter items */
+    justify-content: center; /* Center the filters within the container */
+}
+
+.filters-form {
+    display: flex; /* Flexbox layout for the form */
+    gap: 20px; /* Space between each form element */
+}
+
+.form-group {
+    display: flex; /* Flexbox layout for each form group */
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+.form-group label {
+    font-weight: bold; /* Bold font for form labels */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+.filter-btn {
+    background-color: #4b79a1; /* Primary color for the filter button */
+    color: #fff; /* White text for the button */
+    border: none; /* Remove default button border */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    border-radius: 4px; /* Rounded corners for the button */
+}
+
+.filter-btn:hover {
+    background-color: #355a7a; /* Darker shade on hover */
+}
+
+/* Map section styles */
+#map {
+    width: 100%; /* Map takes up full width of its container */
+    height: 500px; /* Fixed height for the map */
+    margin-bottom: 20px; /* Space below the map */
+}
+
+/* Footer styles */
+.main-footer {
+    background-color: #4b79a1; /* Same primary color as the header */
+    color: #fff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Vertical padding inside the footer */
+    margin-top: 20px; /* Space above the footer */
+}
+
+.container {
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Popup content styles for the info window on the map */
+.popup-content {
+    font-size: 14px; /* Standard font size for popup content */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.popup-content h3 {
+    margin-bottom: 10px; /* Space below the title in the popup */
+}
+
+.popup-content img {
+    margin-bottom: 10px; /* Space below the image in the popup */
+}
+
