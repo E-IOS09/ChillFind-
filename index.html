@@ -2,99 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"> 
-    <!-- Character encoding for the HTML document. UTF-8 supports most characters and is the standard encoding. -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <!-- Ensures proper rendering and touch zooming on mobile devices by setting the viewport to the device's width. -->
-
     <title>Ice Cream Shop Locator</title> 
-    <!-- Title of the webpage that appears in the browser tab. -->
-
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' /> 
-    <!-- External stylesheet link for Mapbox, which is used for map styling. -->
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"> 
-    <!-- Google Font link for the 'Poppins' font family, used for branding text. -->
-
     <link rel="stylesheet" href="styles.css">
-    <!-- Link to the external CSS file (styles.css) where custom styles for the webpage are defined. -->
 </head>
 <body>
     <header class="main-header">
-        <!-- Header section for the page. -->
         <div class="brand-title">
             ChillFind
-            <!-- Branding title displayed in large font. -->
             <div class="subscript">finds comfort</div>
-            <!-- Tagline or subtitle placed below the main title, in a smaller font. -->
         </div>
     </header>
     
     <main>
-        <!-- Main content area of the page. -->
-
         <section class="hero-section">
-            <!-- Hero section at the top of the main content, used to grab attention. -->
             <div class="hero-content">
                 <h2>Discover the Best Ice Cream in Town</h2>
-                <!-- Main headline for the hero section. -->
                 <p>Filter by distance, rating, and more to find the perfect ice cream shop near you.</p>
-                <!-- Supporting text under the headline, providing more context. -->
             </div>
         </section>
 
         <section class="filters-section">
-            <!-- Section for filters that users can apply to refine their search. -->
             <div class="container filters-container">
-                <!-- Container that holds the filter form. -->
-
                 <form class="filters-form">
-                    <!-- Form for filters. No action attribute since the form is processed by JavaScript. -->
-                    
-                    <div class="form-group"> that is like so cool it has t t
-                        <!-- Form group for the distance filter. -->
-                        <label for="distance">Max Distance (km):</label>
-                        <!-- Label for the distance input field. -->
-                        <input type="number" id="distance" name="distance" value="5">
-                        <!-- Input field for setting the maximum search distance in kilometers. -->
-                    </div>
-
                     <div class="form-group">
-                        <!-- Form group for the rating filter. -->
-                        <label for="rating">Min Rating:</label>
-                        <!-- Label for the rating input field. -->
-                        <input type="number" id="rating" name="rating" value="3" min="1" max="5">
-                        <!-- Input field for setting the minimum rating for the search results. -->
+                        <label for="distance">Max Distance (km):</label>
+                        <input type="number" id="distance" name="distance" value="5">
                     </div>
-
+                    <div class="form-group">
+                        <label for="rating">Min Rating:</label>
+                        <input type="number" id="rating" name="rating" value="3" min="1" max="5">
+                    </div>
                     <button type="button" class="filter-btn" onclick="applyFilters()">Apply Filters</button>
-                    <!-- Button to apply the filters. Calls the JavaScript function `applyFilters()` on click. -->
                 </form>
             </div>
         </section>
 
         <section class="map-section">
-            <!-- Section containing the map where search results are displayed. -->
             <div id="map"></div>
-            <!-- The div that will hold the Google Map. Map is initialized and displayed via JavaScript. -->
         </section>
     </main>
 
     <footer class="main-footer">
-        <!-- Footer section at the bottom of the page. -->
         <div class="container">
             <p>© 2024 Ice Locator - All rights reserved.</p>
-            <!-- Footer content, typically containing copyright and other legal information. -->
         </div>
-        some of themmost of th e thing oj this world in oreder to the most of the tried in this world 
     </footer>
 
-    <!-- Google Maps API script. The `places` library is included to search for places (e.g., ice cream shops). -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoVe4t9WUbhHeFJJjvQiVTC5FcLpXel4k&libraries=places"></script>
-
-    <!-- Link to the custom JavaScript file (script.js) where the map and filters functionality are implemented. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoVe4t9WUbhHeFJJjvQiVTC5FcLpXel4k&libraries=places,geometry"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
